@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Clique abaixo para mudar a cor de fundo</h2>
+    <button onclick="mudarCorVerde()">Clique Aqui</button>
+    <h2>Clique aqui para voltar</h2>
+    <button onclick="mudarCorNormal()">Clique Aqui</button>
+    <h2>Clique aqui para festa</h2>
+    <button onclick="RGB()">Clique aqui</button>
+</body>
+</html>
+<script>
+    function mudarCorVerde(){
+        document.body.style.backgroundColor = "green";
+    }
+    function mudarCorNormal(){
+        document.body.style.backgroundColor = "white";
+    }
+    function mudarCorAzul(){
+        document.body.style.backgroundColor = "blue"
+    }
+
+
+    
+    function RGB(){
+        let colors = ["blue", "red"];
+        let index = 0;
+
+        setInterval(() => {
+            document.body.style.backgroundColor = colors[index];
+            index = (index + 1) % colors.length;
+        }, 100);
+    }
+</script>
