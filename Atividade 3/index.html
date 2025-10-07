@@ -6,34 +6,16 @@
     <title>Document</title>
 </head>
 <body>
-    <h2>Clique abaixo para mudar a cor de fundo</h2>
-    <button onclick="mudarCorVerde()">Clique Aqui</button>
-    <h2>Clique aqui para voltar</h2>
-    <button onclick="mudarCorNormal()">Clique Aqui</button>
-    <h2>Clique aqui para festa</h2>
-    <button onclick="RGB()">Clique aqui</button>
+    <h2>Clique abaixo para mudar a cor para azul</h2>
+    <button onclick="mudarCor('blue')">Clique Aqui</button>
+    <h2>Clique abaixo para mudar a cor para vermelho</h2>
+    <button onclick="mudarCor('red')">Clique Aqui</button>
+    <h2>Clique abaixo para mudar a cor para verde</h2>
+    <button onclick="mudarCor('green')">Clique Aqui</button>
 </body>
 </html>
 <script>
-    function mudarCorVerde(){
-        document.body.style.backgroundColor = "green";
-    }
-    function mudarCorNormal(){
-        document.body.style.backgroundColor = "white";
-    }
-    function mudarCorAzul(){
-        document.body.style.backgroundColor = "blue"
-    }
-
-
-    
-    function RGB(){
-        let colors = ["blue", "red"];
-        let index = 0;
-
-        setInterval(() => {
-            document.body.style.backgroundColor = colors[index];
-            index = (index + 1) % colors.length;
-        }, 100);
+    function mudarCor(cor){
+        document.body.style.backgroundColor = cor
     }
 </script>
