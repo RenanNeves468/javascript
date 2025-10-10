@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade</title>
+</head>
+<body>
+    <p id="frase">Aprender <b>JavaScript</b>é divertido</p>
+
+    <button onclick="mostrarTexto()"> Mostrar textContent</button>
+    <button onclick="mostrarHTML()"> Mostrar innerHTML</button>
+
+    <p id="resultado"></p>
+</body>
+</html>
+
+<script>
+
+    let frase = document.getElementById("frase");
+    let resultado = document.getElementById("resultado");
+    
+    function mostrarTexto(){
+        resultado.textContent = "Resultado com textContent: " + frase.textContent;
+    }
+    function mostrarHTML(){
+        resultado.textContent = "Resultado com innerHTML: " + frase.innerHTML;
+    }
+    
+</script>

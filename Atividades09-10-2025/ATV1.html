@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 01</title>
+</head>
+<body>
+    <h1 id="hello">Olá Mundo</h1>
+    <button onclick="mudarTextPT()">Mudar para Portugues</button>
+    <button onclick="mudarTextUS()">Mudar para Inglês</button>
+    <button onclick="mudarTextES()">Mudar para Espanhol</button>
+    <button onclick="mudarTextFC()">Mudar para Francês</button>
+    <button onclick="mudarTextAL()">Mudar para Alemão</button>
+</body>
+</html>
+<script>
+    let hello = document.getElementById("hello");
+    function mudarTextPT(){
+        hello.textContent = "Olá mundo";
+    }
+    function mudarTextUS(){
+        hello.textContent = "Hello, world";
+    }
+    function mudarTextES(){
+        hello.textContent = "Hola, mundo";
+    }
+    function mudarTextFC(){
+        hello.textContent = "Bonjour, le monde";
+    }
+    function mudarTextAL(){
+        hello.textContent = "Hallo, Welt";
+    }
+</script>
+

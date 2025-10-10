@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 03</title>
+</head>
+<body>
+    <h1>diminuir</h1>
+    <p id="contador">10</p>
+    <button onclick="subtrair()">+1</button>
+</body>
+</html>
+<script>
+    let inicio = document.getElementById("contador")
+    let fim = 10
+    function subtrair(){
+        if (fim >= 1) {
+            fim--;
+            inicio.textContent = fim;
+        }
+    }
+</script>
