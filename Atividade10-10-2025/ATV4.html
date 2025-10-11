@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 04</title>
+</head>
+<body>
+    <p id="original">Texto original</p>
+    <button onclick="mudarText()">Clique aqui</button>
+</body>
+</html>
+<script>
+    let txt = document.getElementById("original");
+    function mudarText(){
+        txt.textContent = "Texto alterado com JS!";
+    }
+</script>
