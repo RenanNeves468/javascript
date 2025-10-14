@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 17</title>
+</head>
+<body>
+    <p id="maiusculas" >JavaScript</p>
+    <button onclick="maiusculas()">Clique aqui</button>
+</body>
+</html>
+<script>
+    let texto = document.getElementById("maiusculas")
+    function maiusculas(){
+        texto.textContent = texto.textContent.toUpperCase()
+    }
+</script>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 22</title>
+</head>
+<body>
+    <p id="mudar">Felipe Trabalhando</p>
+    <button onclick="mostrarOcultar()">Mostrar/Ocultar</button>
+</body>
+<script>
+    let text = document.getElementById("mudar");
+    function mostrarOcultar() {
+        if (text.style.display === "none") {
+            text.style.display = "block";
+        } else {
+            text.style.display = "none";
+        }
+    }
+</script>
+</html>

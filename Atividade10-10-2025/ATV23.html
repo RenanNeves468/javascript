@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 23</title>
+</head>
+<body>
+    <h2>Calcular Média</h2>
+    
+    <input type="number" id="valor1" placeholder="Digite o primeiro valor"><br><br>
+    <input type="number" id="valor2" placeholder="Digite o segundo valor"><br><br>
+    <input type="number" id="valor3" placeholder="Digite o terceiro valor"><br><br>
+
+    <button onclick="calcularMedia()">Calcular Média</button>
+
+    <p id="resultado"></p>
+
+    <script>
+        function calcularMedia() {
+            let v1 = parseFloat(document.getElementById("valor1").value);
+            let v2 = parseFloat(document.getElementById("valor2").value);
+            let v3 = parseFloat(document.getElementById("valor3").value);
+            let media = (v1 + v2 + v3) / 3;
+            document.getElementById("resultado").innerHTML = "A média é: " + media.toFixed(2);
+        }
+    </script>
+</body>
+</html>
+<!--Não Fui Eu-->
