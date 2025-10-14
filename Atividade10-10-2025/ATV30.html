@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 24</title>
+</head>
+<body>
+    <input type="text" id="graus" placeholder="Digite a temperatura em Celsius">
+    <button onclick="converter()">Clique aqui</button>
+    <p id="resultado">Fahrenheit: </p>
+</body>
+</html>
+<script>
+    function converter(){
+        let graus = document.getElementById("graus").value;
+        let resultado = document.getElementById("resultado")
+        let converter = Number(graus * 9/5) + 32
+        resultado.textContent = "Fahrenheit: " + converter;
+    }
+</script>
