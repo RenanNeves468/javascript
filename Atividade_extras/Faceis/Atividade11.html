@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Contador de cliques</title>
+</head>
+<body>
+    <p id="clique">Vezes clicadas: 0</p>
+    <button onclick="contar()">Clique aqui</button>
+</body>
+</html>
+<script>
+        let contador = 0
+        let num = document.getElementById("clique")
+    function contar(){
+        contador++;
+        num.textContent = `Vezes clicadas ${contador}`;
+    }
+</script>
